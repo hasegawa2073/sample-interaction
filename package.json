@@ -1,0 +1,28 @@
+{
+  "name": "sample-interaction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npm run watch:sass & npm run watch:ts",
+    "watch:sass": "sass src/scss/:dist/css/ --no-source-map --watch",
+    "watch:ts": "tsc -watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasegawa2073/sample-interaction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasegawa2073/sample-interaction/issues"
+  },
+  "homepage": "https://github.com/hasegawa2073/sample-interaction#readme",
+  "devDependencies": {
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  },
+  "type": "module"
+}
