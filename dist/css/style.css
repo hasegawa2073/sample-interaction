@@ -1,1 +1,36 @@
+:root {
+  --button-size: 60px;
+  --blue: #4391fa;
+}
 
+.add__button {
+  position: relative;
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.add__button-active {
+  transform: scale(0.8);
+}
+.add__button::before, .add__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+.add__button::after {
+  transform: rotate(90deg);
+}
